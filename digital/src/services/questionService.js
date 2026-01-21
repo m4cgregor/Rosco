@@ -12,9 +12,10 @@ export const fetchQuestions = async () => {
         const response = await fetch(PUBHTML_URL + cacheBuster);
         const html = await response.text();
 
-        // 2. Extract tabs using Regex from the HTML content
-        // Pattern matches: {name: "Sheet Name", ..., gid: "123"}
-        const sheetRegex = /name:\s*"([^"]+)",.*gid:\s*"(\d+)"/g;
+        // 2. Extract tabs using more robust Regex
+        // Pattern looks like: {name: "Rosco 1", ..., gid: "0"}
+        // We match 'name' and 'gid' key-values which might be separated by other props.
+        const sheetRegex = /name:\s*"([^"]+)"[\s\S]*?gid:\s*"(\d+)"/g;
         const matches = [...html.matchAll(sheetRegex)];
 
         if (matches.length === 0) {

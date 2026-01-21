@@ -1,0 +1,728 @@
+[
+  {
+    "id": "rosco-1",
+    "title": "Rosco Clásico 1",
+    "questions": [
+      {
+        "letter": "A",
+        "type": "Contiene",
+        "definition": "bar emblemático de la ciudad, ubicado en la intersección de calle Sarmiento y Santa Fe **",
+        "answer": "EL CAIRO"
+      },
+      {
+        "letter": "B",
+        "type": "Empieza",
+        "definition": "Apellido del prócer que creó la bandera argentina y la enarboló por primera vez a orillas del río Paraná **",
+        "answer": "BELGRANO"
+      },
+      {
+        "letter": "C",
+        "type": "Empieza",
+        "definition": "Feria que se organiza en nuestra ciudad y congrega a diferentes países con sus platos tradicionales y danzas típicas **",
+        "answer": "COLECTIVIDADES"
+      },
+      {
+        "letter": "D",
+        "type": "Empieza",
+        "definition": "Apellido de un jugador de fútbol de nuestra ciudad, campeón del mundo en Qatar 2022 **",
+        "answer": "DI MARÍA"
+      },
+      {
+        "letter": "E",
+        "type": "Empieza",
+        "definition": "Área en la que se destacaron Olga y Leticia Cossettini **",
+        "answer": "EDUCACIÓN"
+      },
+      {
+        "letter": "F",
+        "type": "Empieza",
+        "definition": "Balneario muy popular de la ciudad **",
+        "answer": "FLORIDA"
+      },
+      {
+        "letter": "G",
+        "type": "Empieza",
+        "definition": "Idioma del que proviene el nombre del río Paraná **",
+        "answer": "GUARANÍ"
+      },
+      {
+        "letter": "H",
+        "type": "Empieza",
+        "definition": "Rosario es conocida por ser la Capital Nacional de este alimento **",
+        "answer": "HELADO"
+      },
+      {
+        "letter": "I",
+        "type": "Empieza",
+        "definition": "Nombre del Aeropuerto de nuestra ciudad **",
+        "answer": "ISLAS MALVINAS"
+      },
+      {
+        "letter": "J",
+        "type": "Empieza",
+        "definition": "Mes en el que se celebra el día de la bandera **",
+        "answer": "JUNIO"
+      },
+      {
+        "letter": "K",
+        "type": "Empieza",
+        "definition": "Ingrediente que diferencia un tostado de un carlito **",
+        "answer": "KÉTCHUP"
+      },
+      {
+        "letter": "L",
+        "type": "Empieza",
+        "definition": "Lugar en el que se encuentran las aguas danzantes en el Parque Independencia **",
+        "answer": "LAGUITO/LAGO"
+      },
+      {
+        "letter": "M",
+        "type": "Empieza",
+        "definition": "Paseo gastronómico ubicado frente la Terminal de Ómnibus **",
+        "answer": "MERCADO DEL PATIO"
+      },
+      {
+        "letter": "N",
+        "type": "Contiene",
+        "definition": "Avenida que rodea gran parte de la ciudad **",
+        "answer": "CIRCUNVALACIÓN"
+      },
+      {
+        "letter": "Ñ",
+        "type": "Contiene",
+        "definition": "Nombre de uno de los parques más populares de nuestra ciudad **",
+        "answer": "PARQUE DE ESPAÑA"
+      },
+      {
+        "letter": "O",
+        "type": "Empieza",
+        "definition": "Lugar del Complejo Astronómico Municipal donde se puede observar por medio de un telescopio la Luna, los planetas y eventos astronómicos extraordinarios **",
+        "answer": "OBSERVATORIO"
+      },
+      {
+        "letter": "P",
+        "type": "Empieza",
+        "definition": "Apodo de Lionel Messi **",
+        "answer": "PULGA"
+      },
+      {
+        "letter": "Q",
+        "type": "Contiene",
+        "definition": "Lugar en donde se encuentra el Museo de la Ciudad **",
+        "answer": "PARQUE INDEPENDENCIA"
+      },
+      {
+        "letter": "R",
+        "type": "Empieza",
+        "definition": "Nombre de un humorista, escritor e historietista muy famoso de la ciudad cuyo apellido es Fontanarrosa **",
+        "answer": "ROBERTO"
+      },
+      {
+        "letter": "S",
+        "type": "Empieza",
+        "definition": "Construcción donde se encuentra el Museo MACRO y cuyas paredes pintadas son una tradición en nuestra ciudad **",
+        "answer": "SILOS DAVIS"
+      },
+      {
+        "letter": "T",
+        "type": "Empieza",
+        "definition": "Cantidad de años que cumple nuestra ciudad este año **",
+        "answer": "TRESCIENTOS"
+      },
+      {
+        "letter": "U",
+        "type": "Contiene",
+        "definition": "Estructura que une nuestra ciudad con la ciudad vecina de Victoria, Entre Ríos **",
+        "answer": "PUENTE"
+      },
+      {
+        "letter": "V",
+        "type": "Empieza",
+        "definition": "Nombre con el que se conoce al edificio donde se encuentra el Centro Municipal de Distrito Norte **",
+        "answer": "VILLA HORTENSIA"
+      },
+      {
+        "letter": "W",
+        "type": "Empieza",
+        "definition": "Calle en la que se ubica el Centro Municipal de Distrito Centro “Antonio Berni” **",
+        "answer": "WHEELWRIGHT"
+      },
+      {
+        "letter": "X",
+        "type": "Contiene",
+        "definition": "Medio de transporte que, en nuestra ciudad, son de color negro y amarillo **",
+        "answer": "TAXI"
+      },
+      {
+        "letter": "Y",
+        "type": "Contiene",
+        "definition": "Apellido de una ex jugadora de hockey sobre césped de la ciudad, miembro de “Las Leonas” y multimedallista olímpica **",
+        "answer": "LUCIANA AYMAR"
+      },
+      {
+        "letter": "Z",
+        "type": "Contiene",
+        "definition": "Apellido de un cantante y músico de la ciudad, considerado uno de los artistas más importantes del rock en español **",
+        "answer": "FITO PÁEZ"
+      }
+    ]
+  },
+  {
+    "id": "rosco-2",
+    "title": "Rosco Clásico 2",
+    "questions": [
+      {
+        "letter": "A",
+        "type": "Empieza",
+        "definition": ".",
+        "answer": "ACINDAR"
+      },
+      {
+        "letter": "A",
+        "type": "Empieza",
+        "definition": "Tradicional barrio de Rosario, conocido por sus casas antiguas y su cercanía al Río Paraná.**",
+        "answer": "ALBERDI"
+      },
+      {
+        "letter": "A",
+        "type": "Empieza",
+        "definition": "Reconocido parque ubicado en la zona norte de Rosario. **",
+        "answer": "ALEM"
+      },
+      {
+        "letter": "A",
+        "type": "Empieza",
+        "definition": ".",
+        "answer": "ACINDAR"
+      },
+      {
+        "letter": "B",
+        "type": "Contiene",
+        "definition": "Nombre que llevá el Centro Municipal de Distrito Centro. **",
+        "answer": "ANTONIO BERNI"
+      },
+      {
+        "letter": "B",
+        "type": "Contiene",
+        "definition": "Nombre que llevá el Centro Municipal de Distrito Centro. **",
+        "answer": "ANTONIO BERNI"
+      },
+      {
+        "letter": "C",
+        "type": "Empieza",
+        "definition": "Nombre de una de las peatonales de la ciudad. **",
+        "answer": "CÓRDOBA"
+      },
+      {
+        "letter": "C",
+        "type": "Empieza",
+        "definition": "Nombre del Museo Municipal de Bellas Artes, ubicado en Pellegrini y Oroño. **",
+        "answer": "CASTAGNINO"
+      },
+      {
+        "letter": "C",
+        "type": "Empieza",
+        "definition": "Nombre del Museo Municipal de Bellas Artes, ubicado en Pellegrini y Oroño. **",
+        "answer": "CASTAGNINO"
+      },
+      {
+        "letter": "D",
+        "type": "Contiene",
+        "definition": "Teatro Municipal que forma parte del Patrimonio Histórico de la Ciudad.**",
+        "answer": "LA COMEDIA"
+      },
+      {
+        "letter": "D",
+        "type": "Empieza",
+        "definition": "La ciudad está dividida en 6….? **",
+        "answer": "DISTRITOS"
+      },
+      {
+        "letter": "E",
+        "type": "Contiene",
+        "definition": "Fuente recientemente recuperada ubicada en el Parque Independencia.**",
+        "answer": "FUENTE DE LOS ESPAÑOLES"
+      },
+      {
+        "letter": "E",
+        "type": "Empieza",
+        "definition": "Fuente recientemente recuperada ubicada en el Parque Independencia.**",
+        "answer": "FUENTE DE LOS ESPAÑOLES"
+      },
+      {
+        "letter": "F",
+        "type": "Empieza",
+        "definition": "Fuente ubicada en el laguito de Bv Oroño y Pellegrini.**",
+        "answer": "FUENTE DE LA BELLA DURMIENTE"
+      },
+      {
+        "letter": "F",
+        "type": "Empieza",
+        "definition": "Apellido del reconocido escritor y humorista gráfico de la ciudad.**",
+        "answer": "FONTANARROSA"
+      },
+      {
+        "letter": "F",
+        "type": "Empieza",
+        "definition": "Apellido del reconocido escritor y humorista gráfico de la ciudad.**",
+        "answer": "FONTANARROSA"
+      },
+      {
+        "letter": "G",
+        "type": "Empieza",
+        "definition": "Nombre del Museo Provincial de Ciencias Naturales.**",
+        "answer": "GALLARDO"
+      },
+      {
+        "letter": "G",
+        "type": "Empieza",
+        "definition": "Nombre del Museo Provincial de Ciencias Naturales.**",
+        "answer": "GALLARDO"
+      },
+      {
+        "letter": "H",
+        "type": "Empieza",
+        "definition": "Obra que se construyó para conmemorar el Centenario de la Revolución de Mayo. **",
+        "answer": "HOSPITAL CENTENARIO"
+      },
+      {
+        "letter": "H",
+        "type": "Empieza",
+        "definition": "¿Qué significa la sigla HECA? **",
+        "answer": "HOSPITAL DE EMERGENCIA DR. CLEMENTE ÁLVAREZ"
+      },
+      {
+        "letter": "I",
+        "type": "Empieza",
+        "definition": "Parque más grande y emblemático de la ciudad, ubicado en zona centro.**",
+        "answer": "INDEPENDENCIA"
+      },
+      {
+        "letter": "I",
+        "type": "Empieza",
+        "definition": "Área natural frente a Rosario. **",
+        "answer": "ISLAS DEL PARANÁ"
+      },
+      {
+        "letter": "I",
+        "type": "Empieza",
+        "definition": "Área natural frente a Rosario. **",
+        "answer": "ISLAS DEL PARANÁ"
+      },
+      {
+        "letter": "J",
+        "type": "Empieza",
+        "definition": "Personaje del pintor rosarino Antonio Berni.**",
+        "answer": "JUANITO LAGUNA"
+      },
+      {
+        "letter": "K",
+        "type": "Empieza",
+        "definition": "Actividad popular en el río Paraná y sus islas cercanas.**",
+        "answer": "KAYAKISMO"
+      },
+      {
+        "letter": "K",
+        "type": "Empieza",
+        "definition": "Actividad popular en el río Paraná y sus islas cercanas.**",
+        "answer": "KAYAKISMO"
+      },
+      {
+        "letter": "L",
+        "type": "Empieza",
+        "definition": "Nombre oficial del Barrio Arroyito.**",
+        "answer": "LISANDRO DE LA TORRE"
+      },
+      {
+        "letter": "L",
+        "type": "Empieza",
+        "definition": "Nombre del arroyo que desemboca en el Río Paraná a la altura del barrio Arroyito.**",
+        "answer": "LUDUEÑA"
+      },
+      {
+        "letter": "L",
+        "type": "Empieza",
+        "definition": "Nombre del arroyo que desemboca en el Río Paraná a la altura del barrio Arroyito.**",
+        "answer": "LUDUEÑA"
+      },
+      {
+        "letter": "M",
+        "type": "Empieza",
+        "definition": "La Escuela Municipal de Artes Plásticas lleva el nombre de un pintor rosarino, ¿Cuál es su nombre?.**",
+        "answer": "MANUEL MUSTO"
+      },
+      {
+        "letter": "M",
+        "type": "Empieza",
+        "definition": "Construcción símbolo de la ciudad de Rosario, donde Belgrano enarboló por primera vez la Bandera de Argentina.**",
+        "answer": "MONUMENTO A LA BANDERA"
+      },
+      {
+        "letter": "M",
+        "type": "Empieza",
+        "definition": "Famoso perro que aparece en la historieta de Inodoro Pereyra creado por Roberto Fontanarrosa. **",
+        "answer": "MENDIETA"
+      },
+      {
+        "letter": "M",
+        "type": "Empieza",
+        "definition": "Famoso perro que aparece en la historieta de Inodoro Pereyra creado por Roberto Fontanarrosa. **",
+        "answer": "MENDIETA"
+      },
+      {
+        "letter": "N",
+        "type": "Empieza",
+        "definition": "Avenida donde se ubica el Autódromo Municipal de Rosario y que conduce al Aeropuerto Islas Malvinas.**",
+        "answer": "NEWBERY"
+      },
+      {
+        "letter": "N",
+        "type": "Empieza",
+        "definition": "Avenida donde se ubica el Autódromo Municipal de Rosario y que conduce al Aeropuerto Islas Malvinas.**",
+        "answer": "NEWBERY"
+      },
+      {
+        "letter": "Ñ",
+        "type": "Contiene",
+        "definition": "Boulevard histórico de Rosario.**",
+        "answer": "OROÑO"
+      },
+      {
+        "letter": "Ñ",
+        "type": "Contiene",
+        "definition": "Boulevard histórico de Rosario.**",
+        "answer": "OROÑO"
+      },
+      {
+        "letter": "O",
+        "type": "Contiene",
+        "definition": "Espacio municipal llamado Humberto de Nito, ubicado en el Parque Urquiza.**",
+        "answer": "ANFITEATRO"
+      },
+      {
+        "letter": "P",
+        "type": "Empieza",
+        "definition": "El CMD Oeste llevá el nombre de Felipe Moré ¿A que se dedicó?.**",
+        "answer": "PERIODISMO"
+      },
+      {
+        "letter": "P",
+        "type": "Empieza",
+        "definition": "Tradicional plaza de Rosario ubicado frente a la Biblioteca Argentina.**",
+        "answer": "PLAZA PRINGLES"
+      },
+      {
+        "letter": "P",
+        "type": "Empieza",
+        "definition": "El CMD Oeste llevá el nombre de Felipe Moré ¿A que se dedicó?.**",
+        "answer": "PERIODISMO"
+      },
+      {
+        "letter": "Q",
+        "type": "Empieza",
+        "definition": "Son conocidas por sus balnearios e historia, ubicadas en la zona sur.**",
+        "answer": "QUEBRADAS DEL SALADILLO"
+      },
+      {
+        "letter": "Q",
+        "type": "Empieza",
+        "definition": "Son conocidas por sus balnearios e historia, ubicadas en la zona sur.**",
+        "answer": "QUEBRADAS DEL SALADILLO"
+      },
+      {
+        "letter": "R",
+        "type": "Empieza",
+        "definition": "Nombre que lleva el CMD Sur.**",
+        "answer": "ROSA ZIPEROVICH"
+      },
+      {
+        "letter": "R",
+        "type": "Empieza",
+        "definition": "Nombre que lleva el CMD Sur. **",
+        "answer": "ROSA ZIPEROVICH"
+      },
+      {
+        "letter": "S",
+        "type": "Empieza",
+        "definition": "Elemento que simboliza el futuro y el progreso en el escudo de la ciudad de Rosario.**",
+        "answer": "SOL"
+      },
+      {
+        "letter": "S",
+        "type": "Empieza",
+        "definition": "Cuanto mide el Monumento",
+        "answer": "60 metros"
+      },
+      {
+        "letter": "S",
+        "type": "Empieza",
+        "definition": "Elemento que simboliza el futuro y el progreso en el escudo de la ciudad de Rosario.**",
+        "answer": "SOL"
+      },
+      {
+        "letter": "T",
+        "type": "Empieza",
+        "definition": "Principal estación de colectivos de larga distancia que conecta la ciudad con el resto del país.**",
+        "answer": "TERMINAL DE ÓMNIBUS MARIANO MORENO"
+      },
+      {
+        "letter": "T",
+        "type": "Empieza",
+        "definition": "Cómo llamamos al colectivo eléctrico que se alimenta de cables aéreos?",
+        "answer": "TROLEBUS"
+      },
+      {
+        "letter": "U",
+        "type": "Empieza",
+        "definition": "Emplazamiento termoeléctrico construido en 1910 a orillas del Paraná, en el antiguo barrio Sorrento.**",
+        "answer": "USINA SORRENTO"
+      },
+      {
+        "letter": "U",
+        "type": "Empieza",
+        "definition": "Una de las principales instituciones educativas de nivel superior de la ciudad.**",
+        "answer": "UNIVERSIDAD NACIONAL DE ROSARIO"
+      },
+      {
+        "letter": "U",
+        "type": "Empieza",
+        "definition": "Emplazamiento termoeléctrico construido en 1910 a orillas del Paraná, en el antiguo barrio Sorrento.**",
+        "answer": "USINA SORRENTO"
+      },
+      {
+        "letter": "V",
+        "type": "Empieza",
+        "definition": "Nombre del palacio que es sede del Concejo Municipal.**",
+        "answer": "VASALLO"
+      },
+      {
+        "letter": "V",
+        "type": "Empieza",
+        "definition": "Nombre del palacio que es sede del Concejo Municipal.**",
+        "answer": "VASALLO"
+      },
+      {
+        "letter": "W",
+        "type": "Contiene",
+        "definition": "Apellido del naturalista que realizó investigaciones en las barrancas del arroyo Saladillo en el Siglo XIX.**",
+        "answer": "DARWIN"
+      },
+      {
+        "letter": "W",
+        "type": "Empieza",
+        "definition": "Calle donde se ubica el Centro Municipal de Distrito Centro.",
+        "answer": "WHEELWRIGHT"
+      },
+      {
+        "letter": "X",
+        "type": "Empieza",
+        "definition": "Medio de transporte, color negro y amarillo.**",
+        "answer": "TAXI"
+      },
+      {
+        "letter": "X",
+        "type": "Contiene",
+        "definition": "Medio de transporte, color negro y amarillo.**",
+        "answer": "TAXI"
+      },
+      {
+        "letter": "Y",
+        "type": "Contiene",
+        "definition": "Predio de 300 hectáreas con más de  40.000 árboles de diversas especies y una pequeña laguna artificial.**",
+        "answer": "BOSQUE DE LOS CONSTITUYENTES"
+      },
+      {
+        "letter": "Y",
+        "type": "Contiene",
+        "definition": "Famoso personaje de historieta creado por el humorista Roberto Fontanarrosa **",
+        "answer": "INODORO PEREYRA"
+      },
+      {
+        "letter": "Y",
+        "type": "Contiene",
+        "definition": "Predio de 300 hectáreas con más de  40.000 árboles de diversas especies y una pequeña laguna artificial.**",
+        "answer": "BOSQUE DE LOS CONSTITUYENTES"
+      },
+      {
+        "letter": "Z",
+        "type": "Contiene",
+        "definition": "Espacio muy frecuentado para paseos y actividades al aire libre, se extiende en la zona céntrica sobre altas barrancas con vista al río.**",
+        "answer": "PARQUE URQUIZA"
+      },
+      {
+        "letter": "Z",
+        "type": "Contiene",
+        "definition": "Espacio verde muy frecuentado sobre altas barrancas con vista al río.**",
+        "answer": "PARQUE URQUIZA"
+      }
+    ]
+  },
+  {
+    "id": "rosco-kids",
+    "title": "Rosco Infancias",
+    "questions": [
+      {
+        "letter": "A",
+        "type": "Empieza",
+        "definition": "Circuito de carreras de deporte motor, ubicado en Av. Newbery.",
+        "answer": "autódromo municipal"
+      },
+      {
+        "letter": "B",
+        "type": "Empieza",
+        "definition": "Apellido del prócer que creó la Bandera.",
+        "answer": "Belgrano"
+      },
+      {
+        "letter": "C",
+        "type": "Empieza",
+        "definition": "Equipo de primera división, cuyos colores son azul y amarillo.",
+        "answer": "Central"
+      },
+      {
+        "letter": "D",
+        "type": "Empieza",
+        "definition": "Jugador de fútbol de la selección, campeón del mundo.",
+        "answer": "Di Maria"
+      },
+      {
+        "letter": "E",
+        "type": "Empieza",
+        "definition": "Símbolo que colocamos en la ropa durante las fechas patrias.",
+        "answer": "Escarapela"
+      },
+      {
+        "letter": "F",
+        "type": "Empieza",
+        "definition": "Balneario muy popular de nuestra ciudad.",
+        "answer": "La Florida"
+      },
+      {
+        "letter": "G",
+        "type": "Empieza",
+        "definition": "La palabra \"Paraná\" significa \"pariente del mar\", ¿de qué idioma proviene?",
+        "answer": "guaraní"
+      },
+      {
+        "letter": "H",
+        "type": "Empieza",
+        "definition": "Rosario es la capital nacional del… un alimento.",
+        "answer": "helado"
+      },
+      {
+        "letter": "I",
+        "type": "Empieza",
+        "definition": "¿En qué hecho histórico participó nuestra ciudad?",
+        "answer": "Izamiento por primera vez de la Bandera"
+      },
+      {
+        "letter": "J",
+        "type": "Empieza",
+        "definition": "Mes en el que se celebra el Día de la Bandera.",
+        "answer": "Junio"
+      },
+      {
+        "letter": "K",
+        "type": "Empieza",
+        "definition": "Ingrediente que diferencia un tostado de un carlitos.",
+        "answer": "Kétchup"
+      },
+      {
+        "letter": "L",
+        "type": "Empieza",
+        "definition": "Lugar donde se encuentran las aguas danzantes del Parque Independencia.",
+        "answer": "Laguito"
+      },
+      {
+        "letter": "M",
+        "type": "Empieza",
+        "definition": "Jugador de fútbol de la selección, campeón del mundo.",
+        "answer": "Messi"
+      },
+      {
+        "letter": "N",
+        "type": "Empieza",
+        "definition": "Cantante muy conocida de nuestra ciudad.",
+        "answer": "Nicki Nicole"
+      },
+      {
+        "letter": "Ñ",
+        "type": "Contiene",
+        "definition": "Contiene Ñ- Parque de la ciudad con altas escalinatas donde se puede andar en skate y patinar, con vistas al río.",
+        "answer": "Parque España"
+      },
+      {
+        "letter": "O",
+        "type": "Empieza",
+        "definition": "Boulevard histórico de la ciudad cruza con Av. Pellegrini, donde siempre se enciende el árbol de Navidad.",
+        "answer": "Oroño"
+      },
+      {
+        "letter": "P",
+        "type": "Empieza",
+        "definition": "Nombre del actual intendente de nuestra ciudad.",
+        "answer": "Pablo Javkin"
+      },
+      {
+        "letter": "Q",
+        "type": "Contiene",
+        "definition": "Lugar donde se encuentra el rosedal y la fecha, donde las quinceañeras se sacan fotos.",
+        "answer": "Parque Independencia"
+      },
+      {
+        "letter": "R",
+        "type": "Empieza",
+        "definition": "Lugar de nuestra ciudad donde se puede pasear en lancha o barco.",
+        "answer": "Rio"
+      },
+      {
+        "letter": "S",
+        "type": "Empieza",
+        "definition": "¿En cuántos Distritos se divide nuestra ciudad?",
+        "answer": "Seis"
+      },
+      {
+        "letter": "T",
+        "type": "Empieza",
+        "definition": "Cantidad de años que cumple la ciudad.",
+        "answer": "Trescientos"
+      },
+      {
+        "letter": "U",
+        "type": "Contiene",
+        "definition": "** Estructura que une nuestra ciudad con la ciudad vecina de Victoria, Entre Ríos",
+        "answer": "Puente"
+      },
+      {
+        "letter": "V",
+        "type": "Empieza",
+        "definition": "¿Por qué se llama Rosario nuestra ciudad?",
+        "answer": "Virgen del Rosario"
+      },
+      {
+        "letter": "W",
+        "type": "Contiene",
+        "definition": "** Equipo de primera división, cuyos colores son rojo y negro.",
+        "answer": "Newells"
+      },
+      {
+        "letter": "X",
+        "type": "Contiene",
+        "definition": "Medio de transporte que, en nuestra ciudad, es de color negro y amarillo-",
+        "answer": "Taxi"
+      },
+      {
+        "letter": "Y",
+        "type": "Empieza",
+        "definition": "Apellido de una ex jugadora de hockey rosarina, miembro de “Las Leonas”.",
+        "answer": "Lucha Aymar"
+      },
+      {
+        "letter": "Z",
+        "type": "Contiene",
+        "definition": "** Apellido de un cantante de rock nacional nacido en la ciudad.",
+        "answer": "Fito Paez"
+      }
+    ]
+  }
+]

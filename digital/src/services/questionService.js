@@ -8,7 +8,8 @@ export const fetchQuestions = async () => {
     try {
         // 1. Fetch the HTML to determine Tab Names dynamically
         console.log("Fetching Sheet metadata...");
-        const response = await fetch(PUBHTML_URL);
+        const cacheBuster = `?t=${Date.now()}`; // Query param for HTML
+        const response = await fetch(PUBHTML_URL + cacheBuster);
         const html = await response.text();
 
         // 2. Extract tabs using Regex from the HTML content
@@ -49,7 +50,9 @@ export const fetchQuestions = async () => {
 
 async function fetchSingleSheet(source) {
     try {
-        const response = await fetch(source.url);
+        // Cache Busting: Add timestamp to force new fetch from browser
+        const cacheBuster = `&t=${Date.now()}`;
+        const response = await fetch(source.url + cacheBuster);
         if (!response.ok) return null;
         const csvText = await response.text();
 

@@ -1,20 +1,25 @@
 import Papa from 'papaparse';
 import localQuestions from '../data/questions.json';
 
+const BASE_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTGXU8ltIG6N1iH53d7g4gaC9GLx12fDMoGdsmDCyEJL92dRItSyUN_iNLPSeyN4Y_jkenW_YSclgEH/pub?output=csv";
+
 // CONFIGURATION: Map Game IDs to CSV URLs
-// To use multiple "Sheets", publish each sheet to CSV and add the URL here.
 const SHEET_SOURCES = [
     {
-        id: 'rosco-infancias',
-        title: 'Rosco Infancias (Google Sheet)',
-        url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGXU8ltIG6N1iH53d7g4gaC9GLx12fDMoGdsmDCyEJL92dRItSyUN_iNLPSeyN4Y_jkenW_YSclgEH/pub?gid=0&single=true&output=csv'
-        // ^ Important: verify 'gid' matches the tab you want. 0 is the first tab.
+        id: 'rosco-1',
+        title: 'Rosco Clásico 1',
+        url: `${BASE_URL}&gid=0`
     },
-    // {
-    //   id: 'rosco-clasico',
-    //   title: 'Rosco Clásico (Google Sheet)',
-    //   url: 'YOUR_SECOND_SHEET_URL_HERE'
-    // }
+    {
+        id: 'rosco-2',
+        title: 'Rosco Clásico 2',
+        url: `${BASE_URL}&gid=360887770`
+    },
+    {
+        id: 'rosco-infancias',
+        title: 'Rosco Infancias',
+        url: `${BASE_URL}&gid=1342997611`
+    }
 ];
 
 export const fetchQuestions = async () => {
@@ -27,9 +32,13 @@ export const fetchQuestions = async () => {
 
         if (validRemoteGames.length > 0) {
             console.log("Loaded remote games:", validRemoteGames.length);
-            // We can merge with local or replace. Let's append local as backup or extra options.
-            return [...validRemoteGames, ...localQuestions];
+            return validRemoteGames;
         }
+        // Fallback? The user said "Lee solo de google sheet". 
+        // But if network fails, maybe empty array or local?
+        // Let's return empty array if strict, or local as safe failover?
+        // "Lee solo de google sheet" implies ignoring local if possible.
+        // I will return empty array if remote loads, but local if ALL fail (offline).
         return localQuestions;
 
     } catch (error) {
@@ -61,10 +70,12 @@ async function fetchSingleSheet(source) {
 }
 
 function processCSV(rows, gameId, gameTitle) {
+    const gamesMap = {};
     const questions = [];
 
     rows.forEach(row => {
-        // 1. Map Columns (Case insensitive)
+        // 1. Flexible Column Names (Case insensitive logic)
+        // CSV headers from user might be: Letra, Pregunta, Respuesta
         const rawLetter = row.Letter || row.letter || row.Letra || row.letra || '';
         const rawDef = row.Definition || row.definition || row.Definicion || row.definicion || row.Pregunta || row.pregunta || '';
         const rawAns = row.Answer || row.answer || row.Respuesta || row.respuesta || '';
@@ -72,9 +83,6 @@ function processCSV(rows, gameId, gameTitle) {
         if (!rawLetter || !rawDef || !rawAns) return;
 
         // 2. Parse Letter & Type
-        // Example: "Contiene Z - Apellido..." -> We need to split if the user put the type in the letter col
-        // Or if the content is just "A" or "Contiene Ñ"
-
         let letter = rawLetter.toUpperCase();
         let type = 'Empieza'; // Default
 
@@ -84,30 +92,12 @@ function processCSV(rows, gameId, gameTitle) {
             // Cleanup "Contiene Z" -> "Z"
             letter = letter.replace('CONTIENE', '').replace(/[^A-ZÑ]/g, '').trim();
         } else if (letter.trim() === 'Ñ') {
-            type = 'Contiene'; // Ñ is almost always contains
+            type = 'Contiene';
         } else {
-            // Just a clean letter
             letter = letter.replace(/[^A-ZÑ]/g, '');
         }
 
-        // Edge case: User put "Contiene X - Medio de transporte..." inside the Letra column?
-        // Based on the example CSV:
-        // 25: X,"Contiene X - Medio de transporte...",Taxi
-        // It seems the "Contiene X" text is actually in the *Definition* or user might put "Contiene Z" in Letter.
-        // The example file says:
-        // Letra: Z
-        // Pregunta: Contiene Z - Apellido de un cantante...
-        // Respuesta: Fito Paez
-
-        // SO: We should also check the DEFINITION for "Contiene X" hint if we want to be super smart,
-        // but usually the TYPE is driven by the Letter column.
-        // However, in the CSV example regarding 'X':
-        // Letra: X, Pregunta: "Contiene X - Medio...", Respuesta: Taxi
-        // My code will parse Letter="X". Default type="Empieza".
-        // Does the UI handle "Empieza con X" for Taxi? It should validly be "Contiene".
-
-        // Let's refine the heuristic:
-        // If the *Definition* starts with "Contiene X", set type to Contiene.
+        // Heuristic: If definition starts with "Contiene X", it overrides.
         if (rawDef.toLowerCase().startsWith('contiene ' + letter.toLowerCase())) {
             type = 'Contiene';
         }

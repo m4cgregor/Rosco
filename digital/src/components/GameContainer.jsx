@@ -69,6 +69,9 @@ export function GameContainer({ gameData, onExit }) {
         if (isCorrect) {
             status = 'correct';
             setScore(s => s + 1);
+            new Audio('/Rosco/ok.wav').play().catch(e => console.log('Audio play failed', e));
+        } else {
+            new Audio('/Rosco/error.wav').play().catch(e => console.log('Audio play failed', e));
         }
 
         // Logic to move to next pending question

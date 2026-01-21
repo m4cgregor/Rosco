@@ -100,11 +100,38 @@ function processCSV(rows, gameId, gameTitle) {
             type = 'Contiene';
         }
 
+        // 3. Collect Valid Answers (Support multiple columns + splitting)
+        // User might use columns: "Respuesta", "Respuesta 2", "Opcion", etc.
+        const validAnswers = new Set();
+
+        // Add primary answer
+        if (rawAns) validAnswers.add(rawAns);
+
+        // Scan other columns for extra answers
+        Object.keys(row).forEach(key => {
+            const val = row[key];
+            if (!val) return;
+
+            const lowerKey = key.toLowerCase();
+            // Heuristic: If column header sounds like an answer or is empty-ish named extra
+            if (lowerKey.includes('respuesta') || lowerKey.includes('answer') || lowerKey.includes('opcion') || lowerKey.includes('valida') || lowerKey.includes('sinonimo')) {
+                validAnswers.add(val);
+            }
+        });
+
+        // Also support slash delimiters in strict answer fields (optional but helpful)
+        // e.g. "Auto/Coche" in one cell
+        [...validAnswers].forEach(ans => {
+            if (String(ans).includes('/')) {
+                ans.split('/').forEach(part => validAnswers.add(part.trim()));
+            }
+        });
+
         questions.push({
             letter: letter,
             type: type,
             definition: rawDef,
-            answer: rawAns
+            answers: Array.from(validAnswers)
         });
     });
 

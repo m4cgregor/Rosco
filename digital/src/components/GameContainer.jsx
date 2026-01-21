@@ -59,10 +59,14 @@ export function GameContainer({ gameData, onExit }) {
         if (gameState !== 'playing') return;
 
         const userAnswer = normalizeString(inputValue);
-        const correctAnswer = normalizeString(currentQuestion.answer);
+
+        // Support both array 'answers' (dynamic) and single 'answer' (legacy json)
+        const validAnswers = currentQuestion.answers || [currentQuestion.answer];
+
+        const isCorrect = validAnswers.some(ans => normalizeString(ans) === userAnswer);
 
         let status = 'incorrect';
-        if (userAnswer === correctAnswer) {
+        if (isCorrect) {
             status = 'correct';
             setScore(s => s + 1);
         }

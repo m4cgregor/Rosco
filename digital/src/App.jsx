@@ -1,12 +1,31 @@
 import React, { useState } from 'react';
 import { GameContainer } from './components/GameContainer';
-import questionsData from './data/questions.json';
-import { Play } from 'lucide-react';
+import { fetchQuestions } from './services/questionService';
+import { Play, ArrowRight } from 'lucide-react';
 
 function App() {
   const [activeGameId, setActiveGameId] = useState(null);
+  const [gameData, setGameData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const activeGameData = questionsData.find(q => q.id === activeGameId);
+  React.useEffect(() => {
+    fetchQuestions().then(data => {
+      setGameData(data);
+      setLoading(false);
+    });
+  }, []);
+
+  const activeGame = gameData.find(q => q.id === activeGameId);
+
+  // Simple loading state
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-blue-900 flex items-center justify-center text-white flex-col gap-4">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-yellow-400"></div>
+        <p className="animate-pulse">Cargando preguntas...</p>
+      </div>
+    );
+  }
 
   // Layout for the Main Menu
   if (!activeGameId) {
@@ -15,7 +34,6 @@ function App() {
         <div className="max-w-4xl w-full text-center space-y-12">
 
           <div className="space-y-4 animate-fade-in-down">
-            <img src="/rosco-logo-placeholder.png" alt="" className="h-32 mx-auto hidden" />
             {/* Text Logo fallback */}
             <h1 className="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
               ROSCO
@@ -24,7 +42,7 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {questionsData.map((game) => (
+            {gameData.map((game) => (
               <button
                 key={game.id}
                 onClick={() => setActiveGameId(game.id)}
@@ -34,8 +52,8 @@ function App() {
                   <Play size={100} />
                 </div>
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-bold text-white mb-2">{game.title}</h3>
-                  <p className="text-blue-200 text-sm">{game.questions.length} preguntas</p>
+                  <h3 className="text-2xl font-bold text-white mb-2">{game.title || 'Sin Título'}</h3>
+                  <p className="text-blue-200 text-sm">{game.questions?.length || 0} preguntas</p>
                   <div className="mt-8 flex items-center text-yellow-400 font-bold group-hover:gap-2 transition-all">
                     JUGAR <ArrowRightMini />
                   </div>
@@ -55,7 +73,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-700 to-blue-900 overflow-hidden">
       <GameContainer
-        gameData={activeGameData}
+        gameData={activeGame}
         onExit={() => setActiveGameId(null)}
       />
     </div>

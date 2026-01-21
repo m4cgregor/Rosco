@@ -203,7 +203,7 @@ export function GameContainer({ gameData, onExit }) {
             </div>
 
             {/* Main Game Area */}
-            <div className="flex-1 flex flex-col md:flex-row items-center justify-center relative p-4 gap-8">
+            <div className="flex-1 flex flex-col md:flex-row flex-wrap items-center justify-center relative p-4 gap-12 md:gap-24">
 
                 {/* Board Section */}
                 <div className="relative z-0 scale-75 md:scale-100 flex-shrink-0">

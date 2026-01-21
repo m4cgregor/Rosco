@@ -1,7 +1,8 @@
 import Papa from 'papaparse';
 import localQuestions from '../data/questions.json';
 
-const PUBHTML_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGXU8ltIG6N1iH53d7g4gaC9GLx12fDMoGdsmDCyEJL92dRItSyUN_iNLPSeyN4Y_jkenW_YSclgEH/pub?output=csv';
+const PUBHTML_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGXU8ltIG6N1iH53d7g4gaC9GLx12fDMoGdsmDCyEJL92dRItSyUN_iNLPSeyN4Y_jkenW_YSclgEH/pubhtml';
+const BASE_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGXU8ltIG6N1iH53d7g4gaC9GLx12fDMoGdsmDCyEJL92dRItSyUN_iNLPSeyN4Y_jkenW_YSclgEH/pub?output=csv';
 
 export const fetchQuestions = async () => {
     try {

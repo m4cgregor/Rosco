@@ -27,4 +27,41 @@ test('production game flow play', async ({ page }) => {
     await expect(input).toBeVisible();
 
     console.log('Production Game Started Successfully');
+
+    // 4. Test multiple answers for letter B
+    const currentLetterElement = page.locator('.text-6xl.font-black');
+    
+    // Skip A if it's there
+    let currentLetter = (await currentLetterElement.textContent()).trim();
+    if (currentLetter === 'A') {
+        await input.fill('skip');
+        await page.keyboard.press('Enter');
+        await page.waitForTimeout(500);
+        currentLetter = (await currentLetterElement.textContent()).trim();
+    }
+
+    console.log(`Current Letter for validation: ${currentLetter}`);
+
+    if (currentLetter === 'B') {
+        await input.fill('manuel belgrano');
+        await page.keyboard.press('Enter');
+        
+        await page.waitForTimeout(1000);
+        const nextLetter = (await currentLetterElement.textContent()).trim();
+        console.log(`Letter after B: ${nextLetter}`);
+        
+        // Check if B is green in the board
+        // The board letters have data-letter or similar?
+        // Let's check RoscoBoard.jsx or just look for a green element with 'B'
+        const boardB = page.locator('.bg-green-500', { hasText: 'B' });
+        const isBCorrect = await boardB.isVisible();
+        console.log(`Is B marked correct? ${isBCorrect}`);
+        
+        if (!isBCorrect) {
+            console.log('FAIL: B was not marked correct with "manuel belgrano"');
+            throw new Error('Validation failed for multiple answers online');
+        }
+    } else {
+        console.log('Could not find letter B to test.');
+    }
 });

@@ -1,0 +1,54 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - button "✕ Salir" [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]: Puntuación
+        - generic [ref=e10]: "0"
+    - generic [ref=e11]:
+      - img [ref=e12]
+      - generic [ref=e15]: 4:59
+  - generic [ref=e16]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: A
+      - generic [ref=e20]: B
+      - generic [ref=e21]: C
+      - generic [ref=e22]: D
+      - generic [ref=e23]: E
+      - generic [ref=e24]: F
+      - generic [ref=e25]: G
+      - generic [ref=e26]: H
+      - generic [ref=e27]: I
+      - generic [ref=e28]: J
+      - generic [ref=e29]: K
+      - generic [ref=e30]: L
+      - generic [ref=e31]: M
+      - generic [ref=e32]: "N"
+      - generic [ref=e33]: Ñ
+      - generic [ref=e34]: O
+      - generic [ref=e35]: P
+      - generic [ref=e36]: Q
+      - generic [ref=e37]: R
+      - generic [ref=e38]: S
+      - generic [ref=e39]: T
+      - generic [ref=e40]: U
+      - generic [ref=e41]: V
+      - generic [ref=e42]: W
+      - generic [ref=e43]: X
+      - generic [ref=e44]: "Y"
+      - generic [ref=e45]: Z
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: Empieza con
+          - generic [ref=e50]: C
+        - paragraph [ref=e51]: Feria que se organiza en nuestra ciudad y congrega a diferentes países con sus platos tradicionales y danzas típicas
+      - generic [ref=e52]:
+        - textbox "Escribí tu respuesta..." [active] [ref=e53]
+        - button [ref=e54]:
+          - img [ref=e55]
+      - button "PASAPALABRA" [ref=e57]
+```

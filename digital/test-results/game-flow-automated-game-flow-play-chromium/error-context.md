@@ -1,0 +1,54 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - button "✕ Salir" [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]: Puntuación
+        - generic [ref=e10]: "0"
+    - generic [ref=e11]:
+      - img [ref=e12]
+      - generic [ref=e15]: 5:00
+  - generic [ref=e16]:
+    - generic [ref=e18]:
+      - generic: A
+      - generic: B
+      - generic: C
+      - generic: D
+      - generic: E
+      - generic: F
+      - generic: G
+      - generic: H
+      - generic: I
+      - generic: J
+      - generic: K
+      - generic: L
+      - generic: M
+      - generic: "N"
+      - generic: Ñ
+      - generic: O
+      - generic: P
+      - generic: Q
+      - generic: R
+      - generic: S
+      - generic: T
+      - generic: U
+      - generic: V
+      - generic: W
+      - generic: X
+      - generic: "Y"
+      - generic: Z
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]: Empieza con
+          - generic [ref=e23]: A
+        - paragraph [ref=e24]: Bar emblemático de la ciudad, ubicado en la intersección de calle Sarmiento y Santa Fe
+      - generic [ref=e25]:
+        - textbox "Escribí tu respuesta..." [active] [ref=e26]
+        - button [ref=e27]:
+          - img [ref=e28]
+      - button "PASAPALABRA" [ref=e30]
+```

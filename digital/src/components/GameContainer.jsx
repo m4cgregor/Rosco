@@ -61,7 +61,16 @@ export function GameContainer({ gameData, onExit }) {
         const userAnswer = normalizeString(inputValue);
 
         // Support both array 'answers' (dynamic) and single 'answer' (legacy json)
-        const validAnswers = currentQuestion.answers || [currentQuestion.answer];
+        // Also support delimited strings in 'answer' (e.g. "Belgrano; Manuel Belgrano")
+        let validAnswers = currentQuestion.answers || [currentQuestion.answer];
+
+        // Normalize: Flatten any delimiter-separated strings into the array
+        validAnswers = validAnswers.flatMap(ans => {
+            if (typeof ans === 'string') {
+                return ans.split(/[;/]/).map(s => s.trim());
+            }
+            return ans;
+        });
 
         const isCorrect = validAnswers.some(ans => normalizeString(ans) === userAnswer);
 

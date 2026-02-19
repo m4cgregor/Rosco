@@ -119,11 +119,12 @@ function processCSV(rows, gameId, gameTitle) {
             }
         });
 
-        // Also support slash delimiters in strict answer fields (optional but helpful)
-        // e.g. "Auto/Coche" in one cell
+        // Also support slash and semicolon delimiters in strict answer fields
+        // e.g. "Auto/Coche" or "Belgrano; Manuel Belgrano"
         [...validAnswers].forEach(ans => {
-            if (String(ans).includes('/')) {
-                ans.split('/').forEach(part => validAnswers.add(part.trim()));
+            const strAns = String(ans);
+            if (/[;/]/.test(strAns)) {
+                strAns.split(/[;/]/).forEach(part => validAnswers.add(part.trim()));
             }
         });
 

@@ -110,12 +110,12 @@ function processCSV(rows, gameId, gameTitle) {
         // Scan other columns for extra answers
         Object.keys(row).forEach(key => {
             const val = row[key];
-            if (!val) return;
+            if (!val || typeof val !== 'string' || val.trim() === '') return;
 
             const lowerKey = key.toLowerCase();
-            // Heuristic: If column header sounds like an answer or is empty-ish named extra
-            if (lowerKey.includes('respuesta') || lowerKey.includes('answer') || lowerKey.includes('opcion') || lowerKey.includes('valida') || lowerKey.includes('sinonimo')) {
-                validAnswers.add(val);
+            // Heuristic: If column header sounds like an answer, is empty-ish named extra, OR is "Column X" (Google Sheets default for empty headers)
+            if (lowerKey.includes('respuesta') || lowerKey.includes('answer') || lowerKey.includes('opcion') || lowerKey.includes('valida') || lowerKey.includes('sinonimo') || /^column\s*\d+$/i.test(lowerKey)) {
+                validAnswers.add(val.trim());
             }
         });
 

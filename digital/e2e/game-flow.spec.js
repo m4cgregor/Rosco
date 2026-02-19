@@ -31,6 +31,7 @@ test('automated game flow play', async ({ page }) => {
 
     // 4. Play with specific logic to test Multiple Answers
     // We expect Letter B to be present. We will try to answer "Manuel Belgrano" (secondary option).
+    const pasapalabraButton = page.getByText('PASAPALABRA');
 
     // Loop through a few questions
     for (let i = 0; i < 5; i++) {

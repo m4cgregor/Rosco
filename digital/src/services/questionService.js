@@ -114,7 +114,8 @@ function processCSV(rows, gameId, gameTitle) {
 
             const lowerKey = key.toLowerCase();
             // Heuristic: If column header sounds like an answer, is empty-ish named extra, OR is "Column X" (Google Sheets default for empty headers)
-            if (lowerKey.includes('respuesta') || lowerKey.includes('answer') || lowerKey.includes('opcion') || lowerKey.includes('valida') || lowerKey.includes('sinonimo') || /^column\s*\d+$/i.test(lowerKey)) {
+            // Also accept totally empty headers ("") because Sheets CSV export might just have "" for unnamed columns
+            if (lowerKey.includes('respuesta') || lowerKey.includes('answer') || lowerKey.includes('opcion') || lowerKey.includes('valida') || lowerKey.includes('sinonimo') || /^column\s*\d+$/i.test(lowerKey) || lowerKey.trim() === '') {
                 validAnswers.add(val.trim());
             }
         });
